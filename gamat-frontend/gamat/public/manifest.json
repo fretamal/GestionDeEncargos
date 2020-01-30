@@ -1,0 +1,30 @@
+
+{
+  "name": "Gamat App",
+  "short_name": "Gamat",
+  "start_url": "index.html",
+  "icons": [{
+        "src": "img/gamat128x128.png",
+        "sizes": "128x128",
+        "type": "image/png"
+      }, {
+        "src": "img/gamat192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }, {
+        "src": "img/gamat256x256.png",
+        "sizes": "256x256",
+        "type": "image/png"
+      }, {
+        "src": "img/gamar384x384.png",
+        "sizes": "384x384",
+        "type": "image/png"
+      }, {
+        "src": ".img/gamat512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }],
+  "background_color": "#6E6E6E",
+  "display": "standalone",
+  "theme_color": "#000000"
+}

@@ -1,0 +1,52 @@
+Codigo para usar en https://www.json-generator.com/
+[
+  '{{repeat(3)}}',
+  {
+    idRequest: '{{index()}}',
+    state: 'pendiente de aprobacion',
+    observation : '{{lorem(6, "words")}}',
+    date: '{{date(new Date(2018, 0, 1), new Date(), "dd-MM-YYYY hh:mm:ss")}}',
+    user: [
+      {
+        idUser: 0,
+        name: '{{firstName()}} {{surname()}}',
+        email: '{{email()}}'
+      }
+    ],
+    items: [
+      '{{repeat(5)}}',
+      {
+        idItem : '{{index()}}',
+        name : '{{lorem(1, "words")}}',
+        urgency : false,
+        description: '{{lorem(6, "words")}}',
+        price : '{{integer(100, 100000)}}',
+        quantity : '{{integer(1, 100)}}',
+        date : '{{date(new Date(2018, 0, 1), new Date(), "dd-MM-YYYY hh:mm:ss")}}',
+        driver : [
+            {
+            idUser: '{{integer(0, 10)}}',
+            name: '{{firstName()}} {{surname()}}',
+            email: '{{email()}}'
+          }
+        ],
+        distributor : [
+          {
+            idDistributor: '{{integer(0, 10)}}',
+            name: '{{company().toUpperCase()}}',
+            address: '{{integer(100, 999)}} {{street()}}, {{city()}}, {{state()}}, {{integer(100, 10000)}}',
+            date: '{{date(new Date(2018, 0, 1), new Date(), "dd-MM-YYYY hh:mm:ss")}}'
+          }
+        ],
+        itemState : [
+          {
+            idItemState : 1,
+            name :  "estado1",
+            date : '{{date(new Date(2018, 0, 1), new Date(), "dd-MM-YYYY hh:mm:ss")}}'
+          }
+        ]
+        
+      }
+    ]
+  }
+]
